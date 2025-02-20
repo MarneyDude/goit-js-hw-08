@@ -1,0 +1,259 @@
+/* #region COMMON */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease;
+}
+
+.task-list {
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+p > a {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  padding: 10px;
+  background-color: rgba(4, 161, 140, 0.603);
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.task-list li > a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: rgba(5, 2, 201, 0.397);
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.808);
+}
+
+.task-list li > a:hover {
+  box-shadow: inset 0 0 0 18px #3d00ad;
+  scale: 1.1;
+  color: rgb(255, 255, 255);
+}
+/* #endregion COMMON */
+
+/* #region TASK 1  */
+
+#categories {
+  min-width: 392px;
+}
+
+#categories .item {
+  background-color: #ebebf7;
+  padding: 16px;
+  width: 100%;
+  border-radius: 8px;
+}
+.item > h2 {
+  margin-bottom: 16px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.item ul li {
+  padding: 8px 16px;
+  outline: 1px solid #808080;
+  border-radius: 5px;
+}
+
+/* #endregion TASK 1 */
+
+/* #region TASK 2 */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  max-width: 1128px;
+  align-self: center;
+}
+
+.gallery-item {
+  object-fit: cover;
+}
+
+.gallery-image {
+  max-width: 360px;
+  min-height: 300px;
+  object-fit: cover;
+}
+
+/* #endregion TASK 2 */
+
+/* #region TASK 3 */
+
+#name-input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 5px 20px;
+}
+h1 {
+  color: teal;
+}
+
+h1 span {
+  color: lightcoral;
+}
+/* #endregion  TASK 3 */
+
+/* #region TASK 4 */
+.login-form {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 360px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+label input {
+  padding: 10px 20px;
+  outline: transparent;
+  border-radius: 10px;
+  border: 1px solid rgba(4, 126, 240, 0.315);
+}
+.login-form button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  margin-top: 8px;
+  background-color: rgb(43, 155, 192);
+  border: transparent;
+  color: white;
+  cursor: pointer;
+
+  transition: all 350ms ease-in-out;
+}
+.login-form button:hover {
+  box-shadow: 1px 1px #53ea925d, 2px 2px #53ea9254, 3px 3px #53ea93,
+    4px 4px #53ea93, 5px 5px #53ea93, 6px 6px #53ea93, 7px 7px #53ea93;
+  -webkit-transform: translateX(-7px);
+  transform: translateX(-7px);
+}
+
+/* #endregion TASK 4 */
+
+/* #region TASK 5 */
+
+.widget {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.widget p {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.widget p span {
+  color: white;
+  font-weight: 900;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.widget button {
+  padding: 8px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  border: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: rgba(4, 102, 69, 0.329);
+}
+
+/* #endregion TASK 5 */
+
+/* #region TASK 6 */
+
+#boxes {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.box {
+  border-radius: 10px;
+  border: 2px solid black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  align-self: center;
+}
+
+#controls {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 100px;
+}
+
+#controls input {
+  padding: 10px;
+  outline: 2px solid rgb(150, 148, 148);
+}
+
+#controls button[data-create] {
+  background-color: lightgreen;
+  padding: 10px;
+  cursor: pointer;
+}
+#controls button[data-destroy] {
+  background-color: lightcoral;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* #endregion TASK 6 */
