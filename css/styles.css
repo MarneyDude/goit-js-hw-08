@@ -50,6 +50,13 @@ p {
 }
 .gallery-item {
   justify-content: center;
+  outline: 5px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  transition: all 150ms ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
 }
 .gallery-link {
   width: 100%;
